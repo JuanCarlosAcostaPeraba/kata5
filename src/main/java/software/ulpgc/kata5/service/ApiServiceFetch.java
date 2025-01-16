@@ -8,9 +8,8 @@ import java.io.IOException;
 
 public class ApiServiceFetch implements ApiService{
     private static final String API_URL = "https://dogapi.dog/api/facts?number=%d";
-
     private final ApiClient apiClient;
-    private Gson gson;
+    private final Gson gson;
 
     public ApiServiceFetch(ApiClient apiClient, Gson gson) {
         this.apiClient = apiClient;
